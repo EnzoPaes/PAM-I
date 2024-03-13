@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 3fr, 1fr;
+    grid-template-rows: 15vh 70vh 15vh;
+    grid-template-areas: "a a a" "b b c" "d d d";
+}
+
+header {
+    background-color: #ffff00;
+    grid-area: a;
+}
+
+main {
+    background-color: #0000ff;
+    grid-area: b;
+}
+
+aside {
+    background-color: #00ff00;
+    grid-area: c;
+}
+
+footer {
+    background-color: #ff0000;
+    grid-area: d;
+}
